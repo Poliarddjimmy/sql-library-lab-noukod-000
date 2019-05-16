@@ -10,7 +10,7 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "select name, motto from characters group by char_length(motto) order by char_length(motto) limit 1"
+  "select name, motto, char_length(motto) as k from characters group by k  order by k limit 1"
 end
 
 
