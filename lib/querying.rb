@@ -15,7 +15,7 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "select species, count(species) form characters ORDER BY max(count(species)) limit 1;"
+  "select species, max(total) from (select species, count(*) total from characters group by species);"
 end
 
 def select_name_and_series_subgenres_of_authors
