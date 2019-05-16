@@ -10,7 +10,7 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "select name, moto from character group by char_length(moto) "
+  "select name, moto from character group by char_length(moto) order buy char_length(moto) limit 1"
 end
 
 
