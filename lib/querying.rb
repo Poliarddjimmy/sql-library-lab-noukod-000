@@ -11,7 +11,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   #"select name, motto, LEN(motto) as k from characters group by k  order by k limit 1"
-  "Select name, motto from characters ORDER BY LENGTH(motto) DESC ;"
+  "Select name, motto from characters ORDER BY LENGTH(motto) DESC limit 1;"
 end
 
 
