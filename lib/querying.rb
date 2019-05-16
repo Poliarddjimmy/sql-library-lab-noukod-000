@@ -1,6 +1,10 @@
 def select_books_titles_and_years_in_first_series_order_by_year
   "
-    select books.title 
+    select books.title, books.year
+    from books
+    inner join series
+    on books.id = series.book_id 
+    group by books.year where series.id = 1;
   "
 end
 
